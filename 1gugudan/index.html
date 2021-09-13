@@ -10,15 +10,12 @@
 <div id="root"></div>
 <script type="text/babel">
     class GuGuDan extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
+        state = {
               firstNumber : Math.ceil(Math.random() * 9),
               secondNumber : Math.ceil(Math.random() * 9),
               inputValue : '',
               result : '',
-            };
-        }
+        };
 
         onSubmit = (e) =>{
             e.preventDefault();
